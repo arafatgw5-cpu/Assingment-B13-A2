@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+/* Navber styles */
+.navber{
+    /* flex-direction: row; */
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#412567;
+    padding: 16px 200px;
+
+   
+}
+.navber-logo{
+   font-size: 2rem;
+}
+.logo{
+    
+    color: white;
+}
+
+ 
+
+.navber-links{
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.Gradient-Button{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 16px;
+  
+  border: none;
+  border-radius: 10000px;
+  cursor: pointer;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  transition: all 0.3s ease;
+}
+.menu-icon{
+  display: none;
+  cursor: pointer;
+}
+.menu-icon img{
+  width: 26px;
+}
+/* Navber responsive */
+@media screen and (max-width:576px){
+
+  .navber{
+    padding: 16px 20px;      /* left + right gap */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navber-links{
+    display: none;           /* menu hide */
+  }
+
+  .Gradient-Button{
+    display: none;           /* subscribe hide */
+  }
+
+  .menu-icon{
+    display: block;
+   
+   
+  }
+
+  /* .navber-logo svg{
+    width: 120px;
+    height: auto;
+  } */
+}
+  
+
+
